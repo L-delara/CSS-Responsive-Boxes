@@ -15,10 +15,14 @@ body {
 .b {
   min-height: 60vh;
   flex-grow: 3;
+  padding: 10px, 5px;
+  margin: 5px;
 }
 .a,
 .c {
   min-height: 20vh;
+  padding: 10px, 5px;
+  margin: 10px;
 }
 
 @media (min-width: 600px) {
