@@ -1,3 +1,20 @@
 body {
   background: blanchedalmond;
+  font-size: x-large;
+  text-align: center;
+}
+.container {
+  border: 2px solid violet;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.a {
+  border: 1px solid blueviolet;
+}
+.b {
+  border: 1px solid blueviolet;
+}
+.c {
+  border: 1px solid blueviolet;
 }
