@@ -1,24 +1,24 @@
-body {
-  background: blanchedalmond;
-}
-
 * {
   border: 1px solid blueviolet;
 }
-
+body {
+  background: blanchedalmond;
+  margin: 0;
+  text-align: center;
+}
 .container {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
 }
-
+.b {
+  min-height: 60vh;
+  flex-grow: 3;
+}
 .a,
 .c {
-  flex-grow: 1;
-}
-.b {
-  flex-grow: 3;
+  min-height: 20vh;
 }
 
 @media (min-width: 600px) {
@@ -28,5 +28,8 @@ body {
   }
   .a {
     width: 100%;
+  }
+  .b {
+    width: 60%;
   }
 }
