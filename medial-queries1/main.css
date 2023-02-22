@@ -1,20 +1,32 @@
 body {
   background: blanchedalmond;
-  font-size: x-large;
-  text-align: center;
 }
-.container {
-  border: 2px solid violet;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.a {
+
+* {
   border: 1px solid blueviolet;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a,
+.c {
+  flex-grow: 1;
 }
 .b {
-  border: 1px solid blueviolet;
+  flex-grow: 3;
 }
-.c {
-  border: 1px solid blueviolet;
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+  }
 }
