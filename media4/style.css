@@ -1,0 +1,45 @@
+* {
+  border: 1px solid teal;
+}
+
+body {
+  margin: 0;
+  background-color: pink;
+  text-align: center;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main {
+  min-height: 60vh;
+  flex-grow: 5;
+}
+aside {
+  visibility: hidden;
+}
+nav {
+  flex-grow: 2;
+}
+
+footer,
+header {
+  flex-grow: 1;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  header,
+  footer {
+    width: 100%;
+  }
+  main {
+    width: 60%;
+  }
+}
